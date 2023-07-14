@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <main id="app">
+        <div>
+            <picture class="main-image">
+                <source srcset="images/illustration-woman-online-desktop.svg" media="(min-width: 48rem)" />
+                <img src="images/illustration-woman-online-mobile.svg" alt="Woman online" />
+            </picture>
+            <img class="box" src="images/illustration-box-desktop.svg" alt="" aria-hidden="true">
+        </div>
+        <section>
+            <h1>FAQ</h1>
+            <ul>
+                <li class="divider" @click="openItem(0)">
+                    <p class="faq__qustion"><span>How many team members can I invite?</span>
+                        <picture class="arrow">
+                            <img src="images/icon-arrow-down.svg" aria-hidden="true" alt="">
+                        </picture>
+                    </p>
+                    <p class="faq_ans">
+                        You can invite up to 2 additional users on the Free plan. There is no limit on
+                        team members for the Premium plan.
+                    </p>
+                </li>
+                <li class="divider" @click="openItem(1)">
+                    <p class="faq__qustion"><span>What is the maximum file upload size?</span>
+                        <picture class="arrow">
+                            <img src="images/icon-arrow-down.svg" aria-hidden="true" alt="">
+                        </picture>
+                    </p>
+                    <p class="faq_ans">
+                        No more than 2GB. All files in your account must fit your allotted storage space.
+                    </p>
+                </li>
+                <li class="divider" @click="openItem(2)">
+                    <p class="faq__qustion"><span>How do I reset my password?</span>
+                        <picture class="arrow">
+                            <img src="images/icon-arrow-down.svg" aria-hidden="true" alt="">
+                        </picture>
+                    </p>
+                    <p class="faq_ans">
+                        Click “Forgot password” from the login page or “Change password” from your profile page.
+                        A reset link will be emailed to you.
+                    </p>
+                </li>
+                <li class="divider" @click="openItem(3)">
+                    <p class="faq__qustion"><span>Can I cancel my subscription?</span>
+                        <picture class="arrow">
+                            <img src="images/icon-arrow-down.svg" aria-hidden="true" alt="">
+                        </picture>
+                    </p>
+                    <p class="faq_ans">
+                        Yes! Send us a message and we’ll process your request no questions asked.
+                    </p>
+                </li>
+                <li class="divider" @click="openItem(4)">
+                    <p class="faq__qustion"><span>Do you provide additional support?</span>
+                        <picture class="arrow">
+                            <img src="images/icon-arrow-down.svg" aria-hidden="true" alt="">
+                        </picture>
+                    </p>
+                    <p class="faq_ans">
+                        Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Franci Melink</a>.
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

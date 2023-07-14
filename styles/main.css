@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  font-size: .75rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(#af67e9, #6565e7); }
+
+.divider {
+  border-bottom: 1px solid #e7e7e9; }
+
+.box {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-65%, -30%); }
+  @media only screen and (min-width: 62.5rem) {
+    .box {
+      display: block; } }
+
+main {
+  width: 90%;
+  max-width: 57.5rem;
+  min-height: 33.4375rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  position: relative;
+  margin-bottom: 1rem; }
+  main .main-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 100%;
+    max-width: 14.875rem;
+    max-height: 11.25rem; }
+  main section {
+    margin-top: 4rem; }
+    main section h1 {
+      font-size: 2rem;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 2.375rem; }
+    main section ul li {
+      padding: 1rem 0; }
+      main section ul li .faq__qustion span {
+        display: inline-block;
+        width: 95.5%; }
+      main section ul li .faq__qustion picture {
+        display: inline-block;
+        width: 4%;
+        text-align: right; }
+      main section ul li .faq_ans {
+        display: none;
+        width: 95.5%; }
+      main section ul li.active .faq__qustion {
+        font-weight: 700; }
+      main section ul li.active .faq_ans {
+        display: block;
+        margin-top: 1rem; }
+      main section ul li.active .arrow {
+        transform: rotate(180deg); }
+      main section ul li:hover {
+        cursor: pointer; }
+  @media only screen and (min-width: 48rem) {
+    main {
+      display: flex;
+      max-height: 31.875rem;
+      position: relative;
+      font-size: .875rem; }
+      main > * {
+        flex: 1; }
+      main section h1 {
+        text-align: left;
+        margin-bottom: 2.75rem; }
+      main section ul {
+        padding-right: 4rem; }
+      main > div {
+        position: relative; }
+        main > div .main-image {
+          top: 50%;
+          left: 0;
+          max-width: 29.5rem;
+          max-height: 22.5rem;
+          transform: translate(-20%, -50%); }
+          main > div .main-image img {
+            width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */

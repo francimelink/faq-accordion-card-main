@@ -1,0 +1,120 @@
+@import 'reset';
+@import 'global';
+@import 'variables';
+
+
+main {
+    width: 90%;
+    max-width: 57.5rem;
+    min-height: 33.4375rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+
+
+    .main-image {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        width: 100%;
+        max-width: 14.875rem;
+        max-height: 11.25rem;
+    }
+
+    section {
+        margin-top: 4rem;
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 2.375rem;
+        }
+
+        ul {
+            li {
+                padding: 1rem 0;
+
+                .faq__qustion {
+                    span {
+                        display: inline-block;
+                        width: 95.5%;
+                    }
+
+                    picture {
+                        display: inline-block;
+                        width: 4%;
+                        text-align: right;
+                    }
+                }
+
+                .faq_ans {
+                    display: none;
+                    width: 95.5%;
+                }
+
+                &.active {
+                    .faq__qustion {
+                        font-weight: 700;
+                    }
+
+                    .faq_ans {
+                        display: block;
+                        margin-top: 1rem;
+                    }
+
+                    .arrow {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+    @media only screen and (min-width:48rem) {
+        display: flex;
+        max-height: 31.875rem;
+        position: relative;
+        font-size: .875rem;
+
+        >* {
+            flex: 1;
+        }
+
+        section {
+            h1 {
+                text-align: left;
+                margin-bottom: 2.75rem;
+            }
+
+            ul {
+                padding-right: 4rem;
+            }
+        }
+
+        >div {
+            position: relative;
+
+            .main-image {
+                top: 50%;
+                left: 0;
+                max-width: 29.5rem;
+                max-height: 22.5rem;
+                transform: translate(-20%, -50%);
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
