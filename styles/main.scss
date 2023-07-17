@@ -15,17 +15,26 @@ main {
 
 
     .main-image {
+        margin: -1.5rem 0;
         position: absolute;
-        top: 0;
         left: 50%;
-        transform: translate(-50%, -60%);
+        transform: translate(-50%, 0);
         width: 100%;
         max-width: 14.875rem;
-        max-height: 11.25rem;
+
+        background-image: url('../images/bg-pattern-mobile.svg');
+        background-position: left 50% top 5%;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        img {
+            transform: translateY(-60%);
+        }
+
     }
 
     section {
-        margin-top: 4rem;
+        margin-top: 8rem;
 
         h1 {
             font-size: 2rem;
@@ -48,6 +57,10 @@ main {
                         display: inline-block;
                         width: 4%;
                         text-align: right;
+                    }
+
+                    &:hover {
+                        color: $primary_red;
                     }
                 }
 
@@ -90,9 +103,11 @@ main {
         }
 
         section {
+            margin-top: 3rem;
+
             h1 {
                 text-align: left;
-                margin-bottom: 2.75rem;
+                margin-top: 2.75rem;
             }
 
             ul {
@@ -104,14 +119,22 @@ main {
             position: relative;
 
             .main-image {
-                top: 50%;
-                left: 0;
+                bottom: 0;
+                left: 0%;
                 max-width: 29.5rem;
                 max-height: 22.5rem;
-                transform: translate(-20%, -50%);
+                transform: translate(-20%, 0%);
+
+                background-image: url('../images/bg-pattern-desktop.svg');
+                background-position: left 50% bottom 0%;
+                background-size: cover;
+                background-repeat: no-repeat;
 
                 img {
                     width: 100%;
+                    transform: translateY(-27%);
+
+
                 }
             }
         }
